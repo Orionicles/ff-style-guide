@@ -527,24 +527,15 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
 |-- Content
     |-- <a href="#2.2">GenericShooter</a>
         |-- Art
-        |   |-- Industrial
-        |   |   |-- Ambient
-        |   |   |-- Machinery
-        |   |   |-- Pipes
-        |   |-- Nature
-        |   |   |-- Ambient
-        |   |   |-- Foliage
-        |   |   |-- Rocks
-        |   |   |-- Trees
-        |   |-- Office
+        |   |-- Hanging Gardens
+        |   |   |-- Industrial
+        |   |   |-- Luxury
         |-- Characters
-        |   |-- Bob
         |   |-- Common
         |   |   |-- <a href="#2.7">Animations</a>
         |   |   |-- Audio
-        |   |-- Jack
-        |   |-- Steve
-        |   |-- <a href="#2.1.3">Zoe</a>
+        |   |-- DAVE
+        |   |-- Player
         |-- <a href="#2.5">Core</a>
         |   |-- Characters
         |   |-- Engine
@@ -552,13 +543,9 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |-- Interactables
         |   |-- Pickups
         |   |-- Weapons
-        |-- Effects
-        |   |-- Electrical
-        |   |-- Fire
-        |   |-- Weather
         |-- <a href="#2.4">Maps</a>
-        |   |-- Campaign1
-        |   |-- Campaign2
+        |   |-- Hanging Gardens
+        |   |-- Amalthea's Legacy
         |-- <a href="#2.8">MaterialLibrary</a>
         |   |-- Debug
         |   |-- Metal
