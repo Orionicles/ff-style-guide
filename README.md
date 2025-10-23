@@ -351,11 +351,11 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | AI Controller           | AIC_       |            |                                  |
 | Behavior Tree           | BT_        |            |                                  |
 | Blackboard              | BB_        |            |                                  |
-| Decorator               | BTD_       |          |                                  |
+| Decorator               | BTD_       |            |                                  |
 | Service                 | BTService_ |            |                                  |
 | Task                    | BTTask_    |            |                                  |
 | Environment Query       | EQS_       |            |                                  |
-| EnvQueryContext         | EQS_       | Context    |                                  |
+| EnvQueryContext         | EQC_       |            |                                  |
 
 <a name="anc-bp"></a>
 <a name="1.2.4"></a>
