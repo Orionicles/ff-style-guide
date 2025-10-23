@@ -351,7 +351,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | AI Controller           | AIC_       |            |                                  |
 | Behavior Tree           | BT_        |            |                                  |
 | Blackboard              | BB_        |            |                                  |
-| Decorator               | BTDecorator_ |          |                                  |
+| Decorator               | BTD_       |          |                                  |
 | Service                 | BTService_ |            |                                  |
 | Task                    | BTTask_    |            |                                  |
 | Environment Query       | EQS_       |            |                                  |
