@@ -547,11 +547,12 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |-- Hanging Gardens
         |   |-- Amalthea's Legacy
         |-- <a href="#2.8">MaterialLibrary</a>
-        |   |-- Debug
-        |   |-- Metal
-        |   |-- Paint
-        |   |-- Utility
-        |   |-- Weathering
+        |   |-- MasterMaterials
+        |   |-- MaterialLayers
+        |   |-- GenericTextures
+        |   |-- MatFunctions
+        |   |-- PostProcess
+        |   |-- MiscMatInfo
         |-- Placeables
         |   |-- Pickups
         |-- Weapons
