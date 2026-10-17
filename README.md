@@ -395,12 +395,11 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | T_         |            |                                  |
-| Texture (Diffuse/Albedo/Base Color)| T_ | _D      |                                  |
+| Texture (Diffuse/Albedo/Base Color)| T_ | _B      |                                  |
 | Texture (Normal)        | T_         | _N         |                                  |
 | Texture (Roughness)     | T_         | _R         |                                  |
 | Texture (Alpha/Opacity) | T_         | _A         |                                  |
 | Texture (Ambient Occlusion) | T_     | _O         |                                  |
-| Texture (Bump)          | T_         | _B         |                                  |
 | Texture (Emissive)      | T_         | _E         |                                  |
 | Texture (Mask)          | T_         | _M         |                                  |
 | Texture (Specular)      | T_         | _S         |                                  |
@@ -526,16 +525,15 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
 <pre>
 |-- Content
     |-- <a href="#2.2">GenericShooter</a>
-        |-- Art
-        |   |-- Hanging Gardens
-        |   |   |-- Industrial
-        |   |   |-- Luxury
+        |-- Animated
+        |   |-- Player
+        |   |-- Enemies
+        |   |-- NPCs
+        |   |-- Weapons
         |-- Characters
-        |   |-- Common
-        |   |   |-- <a href="#2.7">Animations</a>
-        |   |   |-- Audio
         |   |-- DAVE
         |   |-- Player
+        |   |-- Infantry Snowbot
         |-- <a href="#2.5">Core</a>
         |   |-- Characters
         |   |-- Engine
@@ -543,6 +541,14 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |-- Interactables
         |   |-- Pickups
         |   |-- Weapons
+        |-- Environment
+        |   |-- Generic
+        |   |-- WhisperWard
+        |   |-- HangingGardens
+        |   |   |-- Modkit
+        |   |   |-- Props
+        |   |   |   |-- Tableware
+        |   |   |-- DiningRoom
         |-- <a href="#2.4">Maps</a>
         |   |-- Hanging Gardens
         |   |-- Amalthea's Legacy
@@ -556,7 +562,6 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |-- Placeables
         |   |-- Pickups
         |-- Weapons
-            |-- Common
             |-- Pistols
             |   |-- DesertEagle
             |   |-- RocketPistol
