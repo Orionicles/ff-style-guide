@@ -559,8 +559,12 @@ There are multiple ways to lay out the content of a UE5 project. In this style, 
         |   |-- MatFunctions
         |   |-- PostProcess
         |   |-- MiscMatInfo
+        |-- Narrative
+        |   |-- Dialogue
         |-- Placeables
         |   |-- Pickups
+        |-- Tools
+        |   |-- DungeonVisualizer
         |-- Weapons
             |-- Pistols
             |   |-- DesertEagle
