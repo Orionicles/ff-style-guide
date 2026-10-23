@@ -304,7 +304,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 
 <a name="anc-common"></a>
 <a name="1.2.1"></a>
-#### 1.2.1 Most Common
+### 1.2.1 Most Common
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -351,7 +351,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 
 <a name="anc-common-art"></a>
 <a name="1.2.4"></a>
-##### 1.2.4 Common Art Assets
+### 1.2.4 Common Art Assets
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -366,7 +366,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 
 <a name="anc-animations"></a>
 <a name="1.2.5"></a>
-#### 1.2.5 Animations
+### 1.2.5 Animations
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
