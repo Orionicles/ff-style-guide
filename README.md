@@ -331,7 +331,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Material Instance       | MI_        |            |                                  |
 | Animation Sequence      | A_         |            |                                  |
 | Skeletal Mesh           | SK_        |            |                                  |
-| Skeleto                 | SKEL_      |            |                                  |
+| Skeleton                | SKEL_      |            |                                  |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
