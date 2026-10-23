@@ -31,19 +31,19 @@ For example, if you want to send someone to the first principle of this style gu
     - [1.1 Examples](#1.1-examples)
   - [1.2 Asset Name Modifiers](#asset-name-modifiers)
     - [1.2.1 Most Common](#anc-common)
-      - [1.2.1.1 Common Art Assets](#anc-common-art)
-    - [1.2.2 Animations](#anc-animations)
-  - [1.2.3 Artificial Intelligence](#anc-ai)
-  - [1.2.4 Blueprints](#anc-bp)
-  - [1.2.5 Materials](#anc-materials)
-  - [1.2.6 Textures](#anc-textures)
-    - [1.2.6.1 Texture Packing](#anc-textures-packing)
-  - [1.2.7 Miscellaneous](#anc-misc)
-  - [1.2.8 Paper 2D](#anc-paper2d)
-  - [1.2.9 Physics](#anc-physics)
-  - [1.2.10 Sounds](#anc-sounds)
-  - [1.2.11 User Interface](#anc-ui)
-  - [1.2.12 Effects](#anc-effects)
+  - [1.2.2 Artificial Intelligence](#anc-ai)
+  - [1.2.3 Blueprints](#anc-bp)
+  - [1.2.4 Common Art Assets](#anc-common-art)
+  - [1.2.5 Animations](#anc-animations)
+  - [1.2.6 Materials](#anc-materials)
+  - [1.2.7 Textures](#anc-textures)
+    - [1.2.7.1 Texture Packing](#anc-textures-packing)
+  - [1.2.8 Miscellaneous](#anc-misc)
+  - [1.2.9 Paper 2D](#anc-paper2d)
+  - [1.2.10 Physics](#anc-physics)
+  - [1.2.11 Sounds](#anc-sounds)
+  - [1.2.12 User Interface](#anc-ui)
+  - [1.2.13 Effects](#anc-effects)
 - [2. Content Directory Structure](#structure)
   - [2e1 Example Project Content Structure](#2e1)
   - [2.1 Folder Names](#structure-folder-names)
@@ -318,24 +318,55 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Particle System         | FX_        |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
 
-<a name="anc-common-art"></a>
-<a name="1.2.1.1"></a>
-##### 1.2.1.1 Common Art Assets
+<a name="anc-ai"></a>
+<a name="1.2.2"></a>
+### 1.2.2 Artificial Intelligence
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
-| Texture                 | T_         | _ORMA      | Suffixes change by texture type. See [1.2.6 Textures](#anc-textures) for more details. |
-| Texture Atlas           | TA_        |            |                                  |
-| Material                | M_         |            |                                  |
+| AI Controller           | AIC_       |            |                                  |
+| Behavior Tree           | BT_        |            |                                  |
+| Blackboard              | BB_        |            |                                  |
+| Decorator               | BTD_       |            |                                  |
+| Service                 | BTService_ |            |                                  |
+| Task                    | BTTask_    |            |                                  |
+| Environment Query       | EQS_       |            |                                  |
+| EnvQueryContext         | EQC_       |            |                                  |
+
+<a name="anc-bp"></a>
+<a name="1.2.3"></a>
+### 1.2.3 Blueprints
+
+| Asset Type              | Prefix     | Suffix     | Notes                            |
+| ----------------------- | ---------- | ---------- | -------------------------------- |
+| Blueprint               | BP_        |            |                                  |
+| Blueprint Component     | BP_        | Component  | I.e. BP_InventoryComponent       |
+| Blueprint Function Library | BPFL_   |            |                                  |
+| Blueprint Interface     | BPI_       |            |                                  |
+| Blueprint Macro Library | BPML_      |            | Do not use macro libraries if possible. |
+| Enumeration             | E_         |            |                                  |
+| Structure               | S_         |            |                                  |
+| Tutorial Blueprint      | TBP_       |            |                                  |
+| Widget Blueprint        | WBP_       |            |                                  |
+
+<a name="anc-common-art"></a>
+<a name="1.2.4"></a>
+##### 1.2.4 Common Art Assets
+
+| Asset Type              | Prefix     | Suffix     | Notes                            |
+| ----------------------- | ---------- | ---------- | -------------------------------- |
+| Texture                 | T_         |            | Suffixes change by texture type. See [1.2.7 Textures](#anc-textures) for more details. |
+| Texture Atlas           | TA_        |            | A regular texture, but easier to realize it’s specifically an atlas|
+| Material                | M_         |            | Only make a material if there isn’t a good master material to instance off!|
 | Master Material         | MM_        |            |                                  |
-| Material Instance       | MI_        |            |                                  |
+| Material Instance       | MI_        |            | Please use instances of a preexisting master material whenever possible. Make it a child of an MMI instead of MM though- MMI safeguards if MM parameters change unexpectedly |
 | Animation Sequence      | A_         |            |                                  |
 | Skeletal Mesh           | SKM_       |            |                                  |
 | Skeleton                | SK_        |            |                                  |
 
 <a name="anc-animations"></a>
-<a name="1.2.2"></a>
-#### 1.2.2 Animations
+<a name="1.2.5"></a>
+#### 1.2.5 Animations
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -354,40 +385,10 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Skeletal Mesh           | SK_        |            |                                  |
 | Skeleton                | SKEL_      |            |                                  |
 
-<a name="anc-ai"></a>
-<a name="1.2.3"></a>
-### 1.2.3 Artificial Intelligence
-
-| Asset Type              | Prefix     | Suffix     | Notes                            |
-| ----------------------- | ---------- | ---------- | -------------------------------- |
-| AI Controller           | AIC_       |            |                                  |
-| Behavior Tree           | BT_        |            |                                  |
-| Blackboard              | BB_        |            |                                  |
-| Decorator               | BTD_       |            |                                  |
-| Service                 | BTService_ |            |                                  |
-| Task                    | BTTask_    |            |                                  |
-| Environment Query       | EQS_       |            |                                  |
-| EnvQueryContext         | EQC_       |            |                                  |
-
-<a name="anc-bp"></a>
-<a name="1.2.4"></a>
-### 1.2.4 Blueprints
-
-| Asset Type              | Prefix     | Suffix     | Notes                            |
-| ----------------------- | ---------- | ---------- | -------------------------------- |
-| Blueprint               | BP_        |            |                                  |
-| Blueprint Component     | BP_        | Component  | I.e. BP_InventoryComponent       |
-| Blueprint Function Library | BPFL_   |            |                                  |
-| Blueprint Interface     | BPI_       |            |                                  |
-| Blueprint Macro Library | BPML_      |            | Do not use macro libraries if possible. |
-| Enumeration             | E_         |            |                                  |
-| Structure               | S_         |            |                                  |
-| Tutorial Blueprint      | TBP_       |            |                                  |
-| Widget Blueprint        | WBP_       |            |                                  |
 
 <a name="anc-materials"></a>
-<a name="1.2.5"></a>
-### 1.2.5 Materials
+<a name="1.2.6"></a>
+### 1.2.6 Materials
 
 | Asset Type                    | Prefix     | Suffix     | Notes                            |
 | ----------------------------- | ---------- | ---------- | -------------------------------- |
@@ -402,32 +403,32 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Master Material               | MM_        |            |                                  |
 
 <a name="anc-textures"></a>
-<a name="1.2.6"></a>
-### 1.2.6 Textures
+<a name="1.2.7"></a>
+### 1.2.7 Textures
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | T_         |            |                                  |
-| Texture (Diffuse/Albedo/Base Color)| T_ | _B      |                                  |
+| Texture (Diffuse/Albedo/Base Color)| T_ | _B      | _BE if an emissive mask is in the alpha channel. |
 | Texture (Normal)        | T_         | _N         |                                  |
 | Texture (Roughness)     | T_         | _R         |                                  |
 | Texture (Alpha/Opacity) | T_         | _A         |                                  |
 | Texture (Ambient Occlusion) | T_     | _O         |                                  |
-| Texture (Emissive)      | T_         | _E         |                                  |
+| Texture (Emissive, Colored) | T_     | _E         | When you want specific colors for the emissive. |
 | Texture (Mask)          | T_         | _M         |                                  |
 | Texture (Specular)      | T_         | _S         |                                  |
-| Texture (Metallic)      | T_         | _M         |                                  |
+| Texture (Metallic)      | T_         | _M         | When you want specific colors for the emissive. |
 | Texture (Packed)        | T_         | _*         | See notes below about [packing](#anc-textures-packing). |
 | Texture Cube            | TC_        |            |                                  |
 | Media Texture           | MT_        |            |                                  |
 | Render Target           | RT_        |            |                                  |
 | Cube Render Target      | RTC_       |            |                                  |
 | Texture Light Profile   | TLP        |            |                                  |
-| Texture Atlas           | TA_        |            |                                  |
+| Texture Atlas           | TA_        |            | A regular texture, but easier to realize it’s specifically an atlas |
 
 <a name="anc-textures-packing"></a>
-<a name="1.2.6.1"></a>
-#### 1.2.6.1 Texture Packing
+<a name="1.2.7.1"></a>
+#### 1.2.7.1 Texture Packing
 It is common practice to pack multiple layers of texture data into one texture. An example of this is packing Emissive, Roughness, Ambient Occlusion together as the Red, Green, and Blue channels of a texture respectively. To determine the suffix, simply stack the given suffix letters from above together, e.g. `_ERO`.
 
 > It is generally acceptable to include an Alpha/Opacity layer in your Diffuse/Albedo's alpha channel and as this is common practice, adding `A` to the `_D` suffix is optional.
@@ -435,8 +436,8 @@ It is common practice to pack multiple layers of texture data into one texture. 
 Packing 4 channels of data into a texture (RGBA) is not recommended except for an Alpha/Opacity mask in the Diffuse/Albedo's alpha channel as a texture with an alpha channel incurs more overhead than one without. However, if doing so would prevent a new texture being created, textures should be packed into 4 channels.
 
 <a name="anc-misc"></a>
-<a name="1.2.7"></a>
-### 1.2.7 Miscellaneous
+<a name="1.2.8"></a>
+### 1.2.8 Miscellaneous
 
 | Asset Type                 | Prefix     | Suffix     | Notes                            |
 | -------------------------- | ---------- | ---------- | -------------------------------- |
@@ -464,8 +465,8 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Vector Curve               | Curve_     | _Vector    |                                  |
 
 <a name="anc-paper2d"></a>
-<a name="1.2.8"></a>
-### 1.2.8 Paper 2D
+<a name="1.2.9"></a>
+### 1.2.9 Paper 2D
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -476,8 +477,8 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Tile Set                | TS_        |            |                                  |
 
 <a name="anc-physics"></a>
-<a name="1.2.9"></a>
-### 1.2.9 Physics
+<a name="1.2.10"></a>
+### 1.2.10 Physics
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -486,8 +487,8 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Destructible Mesh       | DM_        |            |                                  |
 
 <a name="anc-sounds"></a>
-<a name="1.2.10"></a>
-### 1.2.10 Sounds
+<a name="1.2.11"></a>
+### 1.2.11 Sounds
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -503,8 +504,8 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Sound Wave              | A_         |            |                                  |
 
 <a name="anc-ui"></a>
-<a name="1.2.11"></a>
-### 1.2.11 User Interface
+<a name="1.2.12"></a>
+### 1.2.12 User Interface
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
@@ -514,8 +515,8 @@ Packing 4 channels of data into a texture (RGBA) is not recommended except for a
 | Widget Blueprint        | WBP_       |            |                                  |
 
 <a name="anc-effects"></a>
-<a name="1.2.12"></a>
-### 1.2.12 Effects
+<a name="1.2.13"></a>
+### 1.2.13 Effects
 
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
