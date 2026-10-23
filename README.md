@@ -392,10 +392,10 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 
 | Asset Type                    | Prefix     | Suffix     | Notes                            |
 | ----------------------------- | ---------- | ---------- | -------------------------------- |
-| Material                      | M_         |            |                                  |
+| Material                      | M_         |            | Only make a material if there isn’t a good master material to instance off! |
 | Material (Post Process)       | PP_        |            |                                  |
 | Material Function             | MF_        |            |                                  |
-| Material Instance             | MI_        |            |                                  |
+| Material Instance             | MI_        |            | Please use instances of a preexisting master material whenever possible. Make it a child of an MMI instead of MM though- MMI safeguards if MM parameters change unexpectedly |
 | Material Parameter Collection | MPC_       |            |                                  |
 | Subsurface Profile            | SP_        |            |                                  |
 | Physical Materials            | PM_        |            |                                  |
