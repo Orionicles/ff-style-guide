@@ -330,8 +330,8 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Master Material         | MM_        |            |                                  |
 | Material Instance       | MI_        |            |                                  |
 | Animation Sequence      | A_         |            |                                  |
-| Skeletal Mesh           | SK_        |            |                                  |
-| Skeleton                | SKEL_      |            |                                  |
+| Skeletal Mesh           | SKM_       |            |                                  |
+| Skeleton                | SK_        |            |                                  |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
