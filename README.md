@@ -31,6 +31,7 @@ For example, if you want to send someone to the first principle of this style gu
     - [1.1 Examples](#1.1-examples)
   - [1.2 Asset Name Modifiers](#asset-name-modifiers)
     - [1.2.1 Most Common](#anc-common)
+      - [1.2.1.1 Common Art Assets](#anc-common-art)
     - [1.2.2 Animations](#anc-animations)
   - [1.2.3 Artificial Intelligence](#anc-ai)
   - [1.2.4 Blueprints](#anc-bp)
@@ -314,12 +315,23 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Level (Geometry)        |            | _Geo       |                                  |
 | Level (Gameplay)        |            | _Gameplay  |                                  |
 | Blueprint               | BP_        |            |                                  |
-| Material                | M_         |            |                                  |
-| Static Mesh             | SM_        |            |                                  |
-| Skeletal Mesh           | SK_        |            |                                  |
-| Texture                 | T_         | _?         | See [Textures](#anc-textures)    |
 | Particle System         | FX_        |            |                                  |
 | Widget Blueprint        | WBP_       |            |                                  |
+
+<a name="anc-common-art"></a>
+<a name="1.2.1.1"></a>
+##### 1.2.1.1 Common Art Assets
+
+| Asset Type              | Prefix     | Suffix     | Notes                            |
+| ----------------------- | ---------- | ---------- | -------------------------------- |
+| Texture                 | T_         | _ORMA      | Suffixes change by texture type. See [1.2.6 Textures](#anc-textures) for more details. |
+| Texture Atlas           | TA_        |            |                                  |
+| Material                | M_         |            |                                  |
+| Master Material         | MM_        |            |                                  |
+| Material Instance       | MI_        |            |                                  |
+| Animation Sequence      | A_         |            |                                  |
+| Skeletal Mesh           | SK_        |            |                                  |
+| Skeleto                 | SKEL_      |            |                                  |
 
 <a name="anc-animations"></a>
 <a name="1.2.2"></a>
@@ -387,6 +399,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Subsurface Profile            | SP_        |            |                                  |
 | Physical Materials            | PM_        |            |                                  |
 | Decal                         | M_, MI_    | _Decal     |                                  |
+| Master Material               | MM_        |            |                                  |
 
 <a name="anc-textures"></a>
 <a name="1.2.6"></a>
@@ -410,6 +423,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Render Target           | RT_        |            |                                  |
 | Cube Render Target      | RTC_       |            |                                  |
 | Texture Light Profile   | TLP        |            |                                  |
+| Texture Atlas           | TA_        |            |                                  |
 
 <a name="anc-textures-packing"></a>
 <a name="1.2.6.1"></a>
@@ -418,7 +432,7 @@ It is common practice to pack multiple layers of texture data into one texture. 
 
 > It is generally acceptable to include an Alpha/Opacity layer in your Diffuse/Albedo's alpha channel and as this is common practice, adding `A` to the `_D` suffix is optional.
 
-Packing 4 channels of data into a texture (RGBA) is not recommended except for an Alpha/Opacity mask in the Diffuse/Albedo's alpha channel as a texture with an alpha channel incurs more overhead than one without.
+Packing 4 channels of data into a texture (RGBA) is not recommended except for an Alpha/Opacity mask in the Diffuse/Albedo's alpha channel as a texture with an alpha channel incurs more overhead than one without. However, if doing so would prevent a new texture being created, textures should be packed into 4 channels.
 
 <a name="anc-misc"></a>
 <a name="1.2.7"></a>
