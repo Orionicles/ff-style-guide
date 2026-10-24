@@ -412,13 +412,13 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Texture (Diffuse/Albedo/Base Color)| T_ | _B      | _BE if an emissive mask is in the alpha channel. |
 | Texture (Occlusion, Roughness, Metallic) | T_ | _ORM| A standard packing of Occlusion, Roughness, and Metallic maps|
 | Texture (Normal)        | T_         | _N         |                                  |
-| Texture (Roughness)     | T_         | _R         |                                  |
-| Texture (Alpha/Opacity) | T_         | _A         |                                  |
-| Texture (Ambient Occlusion) | T_     | _O         |                                  |
+| Texture (Roughness)     | T_         | _R         | For channel packing convention   |
+| Texture (Alpha/Opacity) | T_         | _A         | For channel packing convention   |
+| Texture (Ambient Occlusion) | T_     | _O         | For channel packing convention   |
 | Texture (Emissive, Colored) | T_     | _E         | When you want specific colors for the emissive. |
 | Texture (Mask)          | T_         | _M         |                                  |
-| Texture (Specular)      | T_         | _S         |                                  |
-| Texture (Metallic)      | T_         | _M         | When you want specific colors for the emissive. |
+| Texture (Specular)      | T_         | _S         | For channel packing convention   |
+| Texture (Metallic)      | T_         | _M         | For channel packing convention   |
 | Texture (Packed)        | T_         | _*         | See notes below about [packing](#anc-textures-packing). |
 | Texture Cube            | TC_        |            |                                  |
 | Media Texture           | MT_        |            |                                  |
