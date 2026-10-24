@@ -410,6 +410,7 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | T_         |            |                                  |
 | Texture (Diffuse/Albedo/Base Color)| T_ | _B      | _BE if an emissive mask is in the alpha channel. |
+| Texture (Occlusion, Roughness, Metallic) | T_ | _ORM| A standard packing of Occlusion, Roughness, and Metallic maps|
 | Texture (Normal)        | T_         | _N         |                                  |
 | Texture (Roughness)     | T_         | _R         |                                  |
 | Texture (Alpha/Opacity) | T_         | _A         |                                  |
